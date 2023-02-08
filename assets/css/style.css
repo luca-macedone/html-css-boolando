@@ -1,0 +1,28 @@
+ /* #region common */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ :root {
+     --zb-primary: #ff5b00;
+     --zb-discount: #ff0000;
+     --zb-ethical-green: #008200;
+     --zb-dark: #1a1a1a;
+     --zb-light: #ffffff;
+ }
+
+ /* #endregion common */
+ 
+ /* #region debug */
+
+ /* #endregion debug */
+
+ /* #region utility */
+
+ /* #endregion utility */
+
+ /* #region main */
+
+ /* #endregion main */
