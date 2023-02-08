@@ -22,12 +22,11 @@
 }
 
 .debug #app_main {
-    height: 200vh;
     background-color: paleturquoise;
 }
 
 .debug #app_footer {
-    height: 60px;
+    height: 100px;
     background-color: palegreen;
 }
 
@@ -43,6 +42,25 @@
     width: 20%;
     background-color: aquamarine;
     border: 2px dashed black;
+}
+
+.debug .row {
+    background-color: brown;
+}
+
+.debug .card {
+    height: 50vh;
+    background-color: aliceblue;
+}
+
+.debug .card .img {
+    width: 100%;
+    background-color: #ff5b00;
+}
+
+.debug .card .card_text {
+    width: 100%;
+    background-color: aqua;
 }
 /* #endregion debug */
 
@@ -65,6 +83,36 @@
     position: sticky;
 }
 
+.row {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+    padding: .5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    height: 90%;
+}
+
+.img_hover {
+    display: none;
+}
+
+.card_text {
+    height: 10%;
+}
 /* #endregion utility */
 
 /* #region main */
@@ -83,6 +131,9 @@
 /* #endregion header */
 
 /* #region main */
+#app_main {
+    padding: 4rem 0;
+}
 
 /* #endregion main */
 
