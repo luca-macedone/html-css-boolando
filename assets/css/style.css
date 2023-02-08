@@ -115,6 +115,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 2rem;
 }
 
 .card_img {
@@ -225,6 +226,10 @@ body {
 .menu {
     display: flex;
     gap: 1rem;
+}
+
+.menu i {
+    cursor: pointer;
 }
 
 /* #endregion header */
