@@ -309,9 +309,17 @@ body {
 /* #endregion main */
 
 /* #region footer */
+#app_footer {
+    background-color:var(--zb-dark);
+}
+
 #app_footer .container {
     display: flex;
     justify-content: space-between;
+
+    padding: 2rem 0;
+
+    line-height: 1.5rem;
 }
 
 .copyright {
@@ -322,6 +330,9 @@ body {
     max-width: 30%;
 }
 
+.socials i {
+    cursor: pointer;
+}
 /* #endregion footer */
 
 /* #endregion main */
