@@ -62,6 +62,13 @@
     width: 100%;
     background-color: aqua;
 }
+
+.debug .socials,
+.debug .copyright {
+    height: 100%;
+    width: 30%;
+    background-color: blueviolet;
+}
 /* #endregion debug */
 
 /* #region utility */
@@ -138,7 +145,10 @@
 /* #endregion main */
 
 /* #region footer */
-
+#app_footer .container {
+    display: flex;
+    justify-content: space-between;
+}
 /* #endregion footer */
 
 /* #endregion main */
