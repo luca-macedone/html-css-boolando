@@ -11,6 +11,11 @@
     --zb-ethical-green: #008200;
     --zb-dark: #1a1a1a;
     --zb-light: #ffffff;
+    --font-boolando: "Helvetica Now", Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-boolando);
 }
 
 /* #endregion common */
@@ -69,6 +74,7 @@
     width: 30%;
     background-color: blueviolet;
 }
+
 /* #endregion debug */
 
 /* #region utility */
@@ -120,6 +126,31 @@
 .card_text {
     height: 10%;
 }
+
+.logo {
+    padding: .25rem;
+}
+
+.list {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.text-small {
+    font-size: 1rem;
+}
+
+.color_white {
+    color: var(--zb-light);
+}
+
 /* #endregion utility */
 
 /* #region main */
@@ -128,13 +159,29 @@
 #app_header {
     top: 0;
     left: 0;
+    height: 4rem;
+    background-color: var(--zb-primary);
+    box-shadow: 0 0 .5rem var(--zb-dark);
 }
 
 #app_header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    padding: .5rem;
 }
+
+.logo img {
+    width: 150px;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
 /* #endregion header */
 
 /* #region main */
@@ -149,6 +196,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+.copyright {
+    max-width: 70%;
+}
+
+.socials {
+    max-width: 30%;
+}
+
 /* #endregion footer */
 
 /* #endregion main */
