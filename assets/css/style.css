@@ -109,22 +109,30 @@ body {
 }
 
 .card {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.img {
-    height: 90%;
+.card_img {
+    position: relative;
+    
 }
 
-.img_hover {
+.mask {
     display: none;
 }
 
 .card_text {
-    height: 10%;
+    width: 100%;
+    display: flex;
+    line-height: 1.35rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .logo {
@@ -143,12 +151,48 @@ body {
     text-decoration: none;
 }
 
+.tag {
+    padding: .5rem 1rem;
+}
+
 .text-small {
+    font-size: .8rem;
+}
+
+.text-medium {
     font-size: 1rem;
+}
+
+.text-big {
+    font-size: 1.2rem;
+}
+
+.item_title {
+    text-transform: uppercase;
+}
+
+.text-signed {
+    text-decoration: line-through;
 }
 
 .color_white {
     color: var(--zb-light);
+}
+
+.color_red {
+    color: var(--zb-discount);
+}
+
+.bg_light {
+    background-color: var(--zb-light);
+}
+
+.bg_eco {
+    background-color: var(--zb-ethical-green);
+}
+
+.bg_discount {
+    background-color: var(--zb-discount);
 }
 
 /* #endregion utility */
@@ -157,6 +201,7 @@ body {
 
 /* #region header */
 #app_header {
+    z-index: 50;
     top: 0;
     left: 0;
     height: 4rem;
@@ -188,6 +233,78 @@ body {
 #app_main {
     padding: 4rem 0;
 }
+
+.card_img img {
+    width: 100%;
+}
+
+.tags {
+    display: flex;
+    gap: .25rem;
+    bottom: 6rem;
+    left: 0;
+}
+
+.favorite {
+    padding: 1rem;
+    top: 1rem;
+    right: 0;
+}
+
+/* #region img_hover */
+
+.card:hover #main_img1 {
+    display: none;
+}
+
+.card:hover #img_hover1 {
+    display: block;
+}
+.card:hover #main_img2 {
+    display: none;
+}
+
+.card:hover #img_hover2 {
+    display: block;
+}
+.card:hover #main_img3 {
+    display: none;
+}
+
+.card:hover #img_hover3 {
+    display: block;
+}
+.card:hover #main_img4 {
+    display: none;
+}
+
+.card:hover #img_hover4 {
+    display: block;
+}
+.card:hover #main_img5 {
+    display: none;
+}
+
+.card:hover #img_hover5 {
+    display: block;
+}
+.card:hover #main_img6 {
+    display: none;
+}
+
+.card:hover #img_hover6 {
+    display: block;
+}
+
+/* #endregion img_hover */
+
+/* #region bonus_red_heart */
+
+.favorite:hover>i {
+    color: var(--zb-discount);
+}
+
+/* #endregion bonus_red_heart */
 
 /* #endregion main */
 
